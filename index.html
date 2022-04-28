@@ -17,21 +17,22 @@
 
 <body>
     <header class="topnav">
-        <div class=" d-flex flex-row justify-content-around">
+        <div class="d-flex flex-row justify-content-around">
             <div class="mt-3 ms-3">
                 <img src="/images/Micke-nav-profil.webp" class="nav-link align-middle px-0 img-fluid nav-profile">
             </div>
-            <nav class="topnav--items d-flex ">
-                <ul class="m-1 text-white list-unstyled">
-                    <li class="fs-3 bi-house mt-1"><span class="ms-2">Home</span></li>
-                    <li class="fs-3 bi-person-circle mt-1"><span class="ms-2">Biography</span></li>
-                    <li class="fs-3 fas fa-graduation-cap mt-2"><span class="ms-2 font-weight-normal">Education</span>
+            <nav class="topnav--items d-flex">
+                <ul class="m-1 list-unstyled">
+                    <li id="home-topnav" class="fs-3 bi-house mt-1"><a href="#home" class="ms-2 text-white text-decoration-none">Home</a>
                     </li>
-                    <li class="fs-3 bi-code-slash mt-1"><span class="ms-2">Project</span>
+                    <li class="fs-3 bi-person-circle mt-1"><a href="#biography" class="ms-2 text-white text-decoration-none">Biography</a></li>
+                    <li class="fs-3 fas fa-graduation-cap mt-2"><a href="#education" class="ms-2 text-white text-decoration-none">Education</a>
                     </li>
-                    <li class="fs-3 bi-journal-text mt-1"><span class="ms-2">Testemonials</span>
+                    <li class="fs-3 bi-code-slash mt-1"><a href="#project" class="ms-2 text-white text-decoration-none">Project</a>
                     </li>
-                    <li class="fs-3 bi-envelope mt-1"><span class="ms-2">Contact</span>
+                    <li class="fs-3 bi-journal-text mt-1"><a href="#testimonials" class="ms-2 text-white text-decoration-none">Testimonials</a>
+                    </li>
+                    <li class="fs-3 bi-envelope mt-1"><a href="#contact" class="ms-2 text-white text-decoration-none">Contact</a>
                     </li>
                     <li class="nav-item align-self-center me-4">
                         <div class="d-flex flex-row mb-5">
@@ -49,50 +50,51 @@
     <main class="d-flex flex-row">
         <nav class="sidenav col-auto col-md-3 col-xl-2 px-sm-2 px-0 justify-content-center">
             <div class=" d-flex flex-column align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0  align-items-sm-start text-center" id="menu">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start text-center" id="menu">
                     <li class="nav-item">
                         <img src="/images/Micke-nav-profil.webp" class="nav-link align-middle px-0 img-fluid nav-profile">
                     </li>
                     <li class="nav-item align-self-center me-4">
-                        <a href="#home" class="nav-link align-middle px-0 text-white fs-2 mt-0 pt-0">
+                        <a href="#home" class="nav-link align-middle px-0 text-white fs-2 mt-0 pt-0 ">
                             <div class="d-flex flex-column">
-                                <i class="fs-2 bi-house"></i>
-                                <span class="ms-1 mt-0 pt-0 d-none d-sm-inline">Home</span>
+                                <i class="fs-3 bi-house"></i>
+                                <span class="ms-1 mt-0 pt-0 d-none d-sm-inline fs-3">Home</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item align-self-center me-4">
-                        <a href="#biography" class="nav-link px-0 align-middle text-white fs-2">
-                            <div class="d-flex flex-column ">
-                                <i class="fs-2 bi-person-circle"></i> <span class="ms-1 d-none d-sm-inline">Biography</span>
+                        <a href="#biography" class="nav-link px-0 align-middle text-white fs-3">
+                            <div class="d-flex flex-column">
+                                <i class="fs-3 bi-person-circle"></i>
+                                <span class="ms-1 d-none d-sm-inline">Biography</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item align-self-center me-4">
-                        <a href="#education" class="nav-link px-0 align-middle text-white fs-2">
-                            <div class="d-flex flex-column ">
-                                <i class="fs-2 fas fa-graduation-cap"></i> <span class="ms-1 d-none d-sm-inline">Education</span>
+                        <a href="#education" class="nav-link px-0 align-middle text-white fs-3">
+                            <div class="d-flex flex-column">
+                                <i class="fs-3 fas fa-graduation-cap"></i> <span class="ms-1 d-none d-sm-inline">Education</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item align-self-center me-4">
-                        <a href="#project" class="nav-link px-0 align-middle text-white fs-2">
-                            <div class="d-flex flex-column ">
-                                <i class="fs-2 bi-code-slash"></i> <span class="ms-1 d-none d-sm-inline">Project</span>
+                        <a href="#project" class="nav-link px-0 align-middle text-white fs-3">
+                            <div class="d-flex flex-column">
+                                <i class="fs-3 bi-code-slash"></i> <span class="ms-1 d-none d-sm-inline">Project</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item align-self-center me-4">
-                        <a href="#testimonials" class="nav-link px-0 align-middle text-white fs-2">
-                            <div class="d-flex flex-column ">
-                                <i class="fs-2 bi-journal-text"></i> <span class="ms-1 d-none d-sm-inline">Testimonials</span>
+                        <a href="#testimonials" class="nav-link px-0 align-middle text-white fs-3">
+                            <div class="d-flex flex-column">
+                                <i class="fs-3 bi-journal-text"></i> <span class="ms-1 d-none d-sm-inline">Testimonials</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item align-self-center me-4">
-                        <a href="#contact" class="nav-link px-0 align-middle text-white fs-2">
-                            <div class="d-flex flex-column ">
-                                <i class="fs-2 bi-envelope"></i> <span class="ms-1 d-none d-sm-inline">Contact</span>
+                        <a href="#contact" class="nav-link px-0 align-middle text-white fs-3">
+                            <div class="d-flex flex-column">
+                                <i class="fs-3 bi-envelope"></i> <span class="ms-1 d-none d-sm-inline">Contact</span>
                             </div>
                         </a>
                     </li>
@@ -100,8 +102,8 @@
                         <div class="d-flex flex-row mb-5">
                             <a href="https://www.linkedin.com/in/mikael-asberg/" class="nav-link px-0 align-middle text-white fs-3 mt-3 me-5" target="_blank" rel="noopener noreferrer">
                                 <i class="fs-3 bi-linkedin"></i> </a>
-                            <a href="https://github.com/MikaelAsberg" target="_blank" rel="noopener noreferrer" class="nav-link px-0 align-middle text-white fs-3 mt-3">
-                                <i class="fs-3 bi-github"></i>
+                            <a href="https://github.com/MikaelAsberg " target="_blank " rel="noopener noreferrer " class="nav-link px-0 align-middle text-white fs-3 mt-3">
+                                <i class="fs-3 bi-github "></i>
                             </a>
                         </div>
                     </li>
@@ -113,13 +115,12 @@
                 <div class="letter">
                     <h1 class="about">Welcome</h1>
                     <p class="mb-0 about">
-                        Hi! And Welcome to my portfolio site. My name is Mikael Åsberg and I'm a Front end web development student based in Stockholm archipelago. I have a passion for creating nice looking websites and I have an eye for pure and user friendly experiences.This
-                        site is build with pure HTML5 and CSS3 combined with Bootstrap, and with no templates.</p>
-                    <p>You can find the source code for this site here on my <a href="https://github.com/MikaelAsberg/Portfolio/" target="_blank" class="bi-github text-white"><span class="ms-1 fw-bold">Github</span></a></p>
+                        Hi! And Welcome to my portfolio site. My name is Mikael Åsberg and I'm a Front end web development student based in Stockholm archipelago, and I have a passion for creating nice looking websites. This site is build with pure HTML5 and CSS3 combined with
+                        Bootstrap, and with no templates.</p>
+                    <p>You can find the source code for this web site here on my <a href="https://github.com/MikaelAsberg/Portfolio/" target="_blank" class="bi-github text-white"><span class="ms-1 fw-bold">Github</span></a></p>
                     <div class="d-flex flex-row">
                         <p class="pt-0">You can see my best project in the project tab further down this site by clicking in the menu. You can also see all of my project in my github link, also in the menu.</p>
                     </div>
-                    <p></p>
                 </div>
             </section>
             <section id="biography" class="col py-3 main-area d-flex align-items-center justify-content-center">
@@ -131,10 +132,10 @@
                     <h2 class="pb-0 mb-0">Interest</h2>
                     <p class="mt-1 pt-0">I combine my interest for nature with my interest for IT. I'm a passionate nature photographer and watch for species. I'm good at the technical part of photography as well as Photoshop. My new hobby is programming and I sit on my free
                         time for study and creating web sites.</p>
-                    <h2 class="pb-0 mb-0">More about me</h2>
-                    <p class="mt-1 pt-0">Do you want to know me better and also actually see my human skills as well. Please send me a message on my contact form.</p>
                     <h2 class="pb-0 mb-0">My Job's for the last decade</h2>
-                    <p class="mt-1 pt-0">Mainly Parking guard from october 2013 and forward. I combined my parking guard job with other guarding jobs and volunteering jobs connected to the guarding business.</p>
+                    <p class="mt-1 pt-0 text-center">Mainly Parking guard from october 2013 and forward. I combined my parking guard job with other guarding jobs and volunteering jobs connected to the guarding business.</p>
+                    <h2 class="pb-0 mb-0">More about me</h2>
+                    <p class="mt-1 pt-0 text-center">Do you want to know me better and also actually see my human skills as well. Please send me a message on my contact form.</p>
                 </div>
             </section>
             <section id="education" class="col py-3 d-flex justify-content-center">
@@ -143,8 +144,8 @@
                     <h2 class="pb-0 mb-0">Web developer education</h2>
                     <p class="pt-0 mt-0 text-center">~ Front end web developer ~</p>
                     <p class="pt-0 mt-0 mb-2 pb-0 text-center">Click the box for Sundsgardens home page</p>
-                    <div class="d-flex justify-content-center">
-                        <div class="education-box" type="button" title="Sundsgardens home page" onclick="window.open('https://sundsgarden.se/')">
+                    <div class="d-flex justify-content-center text-center">
+                        <div class="education-box" type="button" title="Sundsgardens home page " onclick="window.open('https://sundsgarden.se/')">
                             <p class="pt-0 mt-0 pb-0 mb-0">Program: IT - Front end Developer</p>
                             <p class="pt-0 mt-0 pb-0 mb-0">Arranges: Sundsgårdens Folkhögskola</p>
                             <p class="pt-0 mt-0 pb-0 mb-0">Location: Helsingborg (distance)</p>
@@ -152,9 +153,9 @@
                         </div>
                     </div>
                     <h2 class="text-center mt-3 mb-0 pb-0">Knowledge</h2>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center text-center fs-5">
                         <div class="knowledge-box">
-                            <p class="pt-2 mt-2 pb-0 mb-0 mt-0 fab fa-html5"><span class="ps-2">HTML5</span></p>
+                            <p class="pt-2 mt-2 pb-0 mb-0 mt-0 fab fa-html5"><span class="ps-2 ">HTML5</span></p>
                             <p class="pt-0 mt-0 pb-0 mb-0 fab fa-css3-alt">
                                 <span class="ps-2">CSS3</span></p>
                             <p class="pt-0 mt-0 pb-0 mb-0 fab fa-sass">
@@ -166,11 +167,11 @@
                         </div>
                     </div>
                     <h3 class="pt-3 mt-3 pb-2 mb-0 pb-0">Additional knowledge</h3>
-                    <p class="pt-0 mt-0 pb-0 mb-0 text-center ">Flexbox * Grid * BEM and clean coding * Web optimization * Debugging * Cross browsing * SEO * UX/UI * Accessibility * Chrome browser tools ... and more</p>
+                    <p class="pt-0 mt-0 pb-0 mb-0 text-center">Flexbox * Grid * BEM and clean coding * Web optimization * Debugging * Cross browsing * SEO * UX/UI * Accessibility * Chrome browser tools ... and more</p>
                     <div>
                         <h3 class="pt-3 mt-3 pb-0 mb-0">Further knowledge</h3>
                         <p class="mt-0 pt-0 pb-1 mb-1 text-center">~before the end of my education~</p>
-                        <p class="text-center mt-0 pt-0"> <span class="fab fa-js mt-0 pt-0"> Javascript</span> * <span class="fab fa-react mt-0 pt-0"> React</span> ... and more</p>
+                        <p class="text-center mt-0 pt-0 fs-5"> <span class="fab fa-js mt-0 pt-0 "> Javascript</span> * <span class="fab fa-react mt-0 pt-0"> React</span> ... and more</p>
                     </div>
                     <h2 class="mt-3 mb-1 pb-0">Web development experience</h2>
                     <ul>
@@ -186,27 +187,28 @@
                 </div>
             </section>
             <section id="project">
-                <div class="d-flex flex-row justify-content-around flex-wrap ">
+                <div class="d-flex flex-row justify-content-around flex-wrap">
                     <div class="project--art-work m-2">
                         <h2 class="mt-5 ps-3 pe-3">PROJECT - PER ÅSBERG ART WORK</h2>
-                        <p class="fs-4 ps-3 pe-3">This web gallery is my own project outside the school, dedicated my brother who are an artist in creating art work.</p>
-                        <p class="fs-4 ps-3 pe-3">For hosting, I used netlify connected with my github account.</p>
-                        <p class="fs-4 ps-3 pe-3">Visit the web page here: <a href="https://per-asberg-artwork.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-white">Per-Asberg-Artwork.netlify.app</a></p>
-                        <p class="fs-4 ps-3 pe-3">Source code at my <span class="bi-github"><a href="https://github.com/MikaelAsberg/per-asberg-artwork" target="_blank" rel="noopener noreferrer" class="ms-1 text-white">Github page here</a></span>
-                        </p>
+                        <p class="ps-3 pe-3">This web gallery is my own project outside the school, dedicated my brother who are an artist in creating art work.</p>
+                        <p class="ps-3 pe-3">Please read my README.md in the Github-repo for more information.</p>
+                        <p class="ps-3 pe-3">Source code at my <span class="bi-github"><a href="https://github.com/MikaelAsberg/per-asberg-artwork" target="_blank" rel="noopener noreferrer" class="ms-1 text-white">Github page here</a></span></p>
+                        <div class="d-flex justify-content-center">
+                            <input type="button" onclick="location.href='https://Per-Asberg-Artwork.netlify.app';" value="Visit web page" target="_blank " rel="noopener noreferrer" class="btn--style fs-3 mt-3 mb-3" />
+                        </div>
                     </div>
                     <div class="project--figma m-2">
                         <h2 class="mt-5 ps-3 pe-3">PROJECT - FIGMA RECREATION</h2>
-                        <p class="fs-4 ps-3 pe-3">I simply created a static responsive website from scratch by following the layout from a figma file. The .fig file comes along with this project in my repo at Github.com, so you can see it for yourself.</p>
-                        <p class="fs-4 ps-3 pe-3">I have not created any web page for this project for the sake of copyright investigations.</p>
-                        <p class="mt-0 pt-0 fs-4 ps-3 pe-3 text-white">Source code at my <span class="bi-github "><a href="https://github.com/MikaelAsberg/Timetest" target="_blank" rel="noopener noreferrer" class="ms-1 text-white">Github page here</a></span>
+                        <p class="ps-3 pe-3">I simply created a static responsive website from scratch by following the layout from a figma file. The purpose of this project is to show future employers what I can do.</p>
+                        <p class="ps-3 pe-3">Please read my README.md in the Github-repo for more information.</p>
+                        <p class=" mt-0 pt-0 ps-3 pe-3 text-white">Source code at my <span class="bi-github"><a href="https://github.com/MikaelAsberg/Timetest" target="_blank" rel="noopener noreferrer " class="ms-1 text-white ">Github page here</a></span>
                         </p>
                     </div>
                     <div class="project--hiking-trails m-2">
                         <h2 class="mt-5 ps-3 pe-3">PROJECT - HIKING TRAILS</h2>
-                        <p class="fs-4 ps-3 pe-3">This is a school project from Sundsgarden. This site is for showing off other skills than just the layout. This project was more about collaboration as an UX/IX-team with good human skills and good performance in the group.</p>
-                        <p class="fs-4 ps-3 pe-3">The Github repo owner did not created any web page for this project because the page contains fake facts and fiction.</p>
-                        <p class="mt-0 pt-0 fs-4 ps-3 pe-3">Source code on the <span class="bi-github"><a href="https://github.com/amelielidaeng/hiking-trails" target="_blank" rel="noopener noreferrer" class="ms-1 text-white">Github page here</a></span>
+                        <p class="ps-3 pe-3">This is a school project from Sundsgarden. This site is for showing off other skills than just the layout. This project was more about collaboration as an UX/IX-team with good human skills and good performance in the group.</p>
+                        <p class="ps-3 pe-3">The Github repo owner did not created any web page for this project because the page contains fake facts and fiction.</p>
+                        <p class="mt-0 pt-0 ps-3 pe-3">Source code on the <span class="bi-github"><a href="https://github.com/amelielidaeng/hiking-trails" target="_blank" rel="noopener noreferrer " class="ms-1 text-white">Github page here</a></span>
                         </p>
                     </div>
                 </div>
@@ -215,7 +217,7 @@
                 <div class="letter">
                     <h1>Testimonials</h1>
                     <h2 class="mt-5">PER ÅSBERG ART WORK</h2>
-                    <p>Per says: "i'm very happy with my home page that my brother created for me. I really like how my work is presented in a way that is not my usual social media platforms for the same art".</p>
+                    <p>Per says: "i 'm very happy with my home page that my brother created for me. I really like how my work is presented in a way that is not my usual social media platforms for the same art".</p>
                 </div>
             </section>
             <section id="contact" class="col py-3 d-flex align-items-center  justify-content-center">
@@ -228,18 +230,18 @@
                         <input type="email" id="email" name="email" class="input" placeholder="Email" required>
                         <label for="phone" class="label">Phone number:</label>
                         <input type="tel" id="phone" name="phone" class="input" placeholder="Phone number">
-                        <label for="select " class="label ">Feedback on this website</label>
-                        <select name="select " id="select " multiple>
-                         <option value="very good" class="option-value ">***** Very good</option>
-                         <option value="good" class="option-value ">*** Good</option>
-                         <option value="need improvement" selected class="option-value ">* need improvement</option>
+                        <label for="select" class="label">Feedback on this website</label>
+                        <select name="select" id="select" multiple>
+                         <option value="very good" class="option-value">***** Very good</option>
+                         <option value="good" class="option-value">*** Good</option>
+                         <option value="need improvement" selected class="option-value">* Need improvement</option>
                      </select>
                         <label for="message" class="label">Message</label>
                         <textarea type="text" id="message" name="message" class="input" placeholder="Message" cols="20" rows="2"></textarea>
-                        <label for="checkbox" class="checkbox-label ms-2" id="checkbox-label ">
-                         <input type="checkbox" id="checkbox " name="checkbox " class="input" checked><span class="checkbox ms-3">I am a recruiter and I'm looking for someone to hiring</span>
-                     </label>
-                        <button type="Submit" class="submit-btn mt-3" value="Contact">Send</button>
+                        <label for="checkbox" class="checkbox-label ms-2" id="checkbox-label">
+                         <input type="checkbox" id="checkbox" name="checkbox" class="input" checked><span class="checkbox ms-3">I am a recruiter and I'm looking for someone to hiring</span>
+                            </label>
+                        <button type="Submit" class="submit-btn mt-3 btn--style" value="Contact">Send</button>
                     </form>
                 </div>
             </section>
